@@ -28,6 +28,7 @@ namespace DatingApp.API.Controllers
             _context = context;
             _logger = logger;
         }
+        [AllowAnonymous]
 
         [HttpGet]
         public async Task<IActionResult> Get()
